@@ -42,36 +42,17 @@ body {
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 
-#bg {
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  width: 150%;
-  height: 150%;
-  background-color: black;
 
-}
-#bg img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  height: 150%;
-  width: 120%;
-  min-width: 50%;
-  min-height: 50%;
-  opacity: .6;
-}
 .site-wrapper {
   display: table;
   width: 100%;
   height: 100%;
   /* For at least Firefox */
   min-height: 100%;
+  overflow: hidden;
   -webkit-box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5); }
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}
 
 .site-wrapper-inner {
   display: table-cell;
@@ -79,11 +60,15 @@ body {
 
 .cover-container {
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  height: 100%;
+}
 
 /* Padding for spacing */
 .inner {
-  padding: 2rem; }
+  padding: 2rem;
+  background-color: rgba(64, 64, 64, 0.85);
+}
 
 /*
  * Header
@@ -108,12 +93,37 @@ body {
   color: #fff;
   border-bottom-color: #fff; }
 
-/*label {
-  text-align: left;
-  clear: both;
-  float: left;
-  margin-left:15px;
-}*/
+html {
+  background: url('../lib/img/lanterns.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -O-BACKGROUND-SIZE: cover;
+  background-size: cover;
+}
+
+h1 {
+  padding-top: 40px;
+}
+
+.welcome, .bye {
+  font-size: 1em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  /*margin-bottom: 55px;*/
+  padding-bottom: 50px;
+
+}
+
+.welcome {
+  text-align: justify;
+}
+
+.bye {
+  padding-bottom: 30px;
+}
+
+
 
 @media (min-width: 48em) {
   .masthead-brand {
@@ -126,6 +136,7 @@ body {
  */
 .cover {
   padding: 0 1.5rem;
+  height: 100%;
 }
 
 .cover .btn-lg {
@@ -171,6 +182,30 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 42rem; } }
+    width: 42rem; }
+  }
+
+  #bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 150%;
+    height: 150%;
+    background-color: black;
+
+  }
+  #bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 150%;
+    width: 120%;
+    min-width: 50%;
+    min-height: 50%;
+    opacity: .6;
+  }
 
 /*# sourceMappingURL=cover.css.map */
