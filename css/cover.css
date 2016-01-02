@@ -67,9 +67,18 @@ body {
 /* Padding for spacing */
 .inner {
   padding: 2rem;
-  background-color: rgba(64, 64, 64, 0.85);
+  background-color: rgba(64, 64, 64, 0.65);
+  height: 120%;
 }
 
+.typeable {
+ height: auto;
+ min-height: 300px;
+}
+
+.permission-text {
+  font-size: .3em;
+}
 /*
  * Header
  */
