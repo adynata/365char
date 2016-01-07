@@ -203,7 +203,7 @@ h1 {
   .mastfoot,
   .cover-container {
     /*width: 100%;*/
-    overflow: auto;
+    overflow: hidden;
 
     /* Must be percentage or pixels for horizontal alignment */ } }
 @media (min-width: 62em) {
